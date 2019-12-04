@@ -29,9 +29,9 @@ class Demographic(object):
     def getPolicyImpactPercentages(self, policyList):
         for policy in policyList:
             if policy.enabled:
-                if self.name in policy.benefited_demographics:
+                if "all" in policy.benefited_demographics or self.name in policy.benefited_demographics:
                     policy.percentage_rate_impact_for_current_demographic = policy.general_percentage_rate_impact * .1
-                elif self.name in policy.harmed_demographics:
+                elif "all" in policy.harmed_demographics or self.name in policy.harmed_demographics:
                     policy.percentage_rate_impact_for_current_demographic = policy.general_percentage_rate_impact * -.1
                 else:
                     policy.percentage_rate_impact_for_current_demographic = policy.general_percentage_rate_impact * 0.05

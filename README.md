@@ -14,7 +14,9 @@ cd "C:\[full path of file]"
 ```bash
 chmod +x DisplayRunner.py
 ```
-4. On Windows and MacOS/Linux, use the following command to run the simulation
+
+## Usage
+On Windows and MacOS/Linux, use the following command to run the simulation
 ```python
 python DisplayRunner.py
 ```
@@ -25,7 +27,7 @@ C:\[path to folder where Python.exe is stored]\python.exe DisplayRunner.py
 
 ## How does it work?
 
-The Grad Rate Predictor implements a systems dynamics model for simulating college degree outcomes based on potential policies that can be implemented. Because of the vast complexities associated with college persistence amongst different demographics, the model does not provide specific graduation rates that represent a definitive conclusion. Instead, the modeled graduation rate has a base value for a given demographic (which comes from [1] that can be changed in three ways:
+The Grad Rate Predictor implements a systems dynamics model for simulating college degree outcomes based on potential policies that can be implemented. Because of the vast complexities associated with college persistence amongst different demographics, the model does not provide specific graduation rates that represent a definitive conclusion. Instead, the modeled graduation rate has a base value for a given demographic (which comes from [1]) that can be changed in three ways:
 
 1. If a policy is known to be beneficial to a specific demographic, then the line shown will be raised up by a factor of 1% of the display height.
 2. If a policy is known to be detrimental to a specific demographic, then the line shown will be lowered by a factor of 1% of the display height.

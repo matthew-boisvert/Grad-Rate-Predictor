@@ -4,7 +4,7 @@ The Grad Rate Predictor is a systems dynamics model of higher education policy i
 
 ## Installation
 
-1. Commit [this](https://github.com/matthew-boisvert/Grad-Rate-Predictor) repository to a local repository using Git or download the files from GitHub
+1. Clone [this](https://github.com/matthew-boisvert/Grad-Rate-Predictor) repository to a local repository using Git or download the files from GitHub
 2. Install [Python 3.6 or above](https://www.python.org/downloads/) and add 
 3. On Windows and MacOs/Linux, run the following command to change the current directory to the folder where the downloaded files were stored
 ```bash
@@ -29,9 +29,9 @@ C:\[path to folder where Python.exe is stored]\python.exe DisplayRunner.py
 
 The Grad Rate Predictor implements a systems dynamics model for simulating college degree outcomes based on potential policies that can be implemented. Because of the vast complexities associated with college persistence amongst different demographics, the model does not provide specific graduation rates that represent a definitive conclusion. Instead, the modeled graduation rate has a base value for a given demographic (which comes from [1]) that can be changed in three ways:
 
-1. If a policy is known to be beneficial to a specific demographic, then the line shown will be raised up by a factor of 1% of the display height.
-2. If a policy is known to be detrimental to a specific demographic, then the line shown will be lowered by a factor of 1% of the display height.
-3. If a policy is not known to be beneficial or detrimental to a given demographic or is known to be neutral to that demographic, then the line shown will be raised by a factor of 0.5% of the display height.
+1. If a policy is known to be beneficial to a specific demographic, then the line shown will be raised up by a factor of 0.5% of the display height.
+2. If a policy is known to be detrimental to a specific demographic, then the line shown will be lowered by a factor of 0.5% of the display height.
+3. If a policy is not known to be beneficial or detrimental to a given demographic or is known to be neutral to that demographic, then the line shown will be raised by a factor of 0.25% of the display height.
 
 With the buttons at the bottom of the GUI, you can choose to activate or deactivate combinations of policies. You can also cycle between demographics within the same category (e.g. financial status) using the buttons in the top right or use the menu to change to a new demographic. This allows you to see how policies interact with independent demographics in different ways and can be combined in ways that benefit as many first-generation students as possible.
 

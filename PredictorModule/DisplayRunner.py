@@ -1,3 +1,5 @@
+import Canvas
+import tkinter as tk
 import Demographic
 import Policy
 import Window
@@ -6,8 +8,9 @@ import MenuBar
 import PolicyDisplay
 import DataParser
 
-policy_list = DataParser.generatePolicyList("PolicyData.csv")
-demographic_list = DataParser.generateDemographicsList("DemographicsData.csv")
+
+policy_list = DataParser.generatePolicyList("../PolicyData.csv")
+demographic_list = DataParser.generateDemographicsList("../DemographicsData.csv")
 
 window = Window.Window(demographic_list, policy_list)
 canvas = Canvas.Canvas(window.frameObj, demographic_list[0])

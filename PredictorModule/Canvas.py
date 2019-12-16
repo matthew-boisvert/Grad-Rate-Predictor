@@ -1,5 +1,6 @@
 import tkinter as tk
-import Window
+from . import Window
+
 
 class Canvas(object):
     current_demographic = None

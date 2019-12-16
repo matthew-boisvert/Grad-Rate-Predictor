@@ -1,5 +1,4 @@
 import tkinter as tk
-import Canvas
 
 class MenuBar(object):
     def __init__(self, master):

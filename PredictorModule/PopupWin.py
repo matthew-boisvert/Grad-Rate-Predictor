@@ -1,6 +1,6 @@
 import tkinter as tk
 import tkinter.ttk
-import Canvas
+from . import Canvas
 
 class PopupWin(object):
     def __init__(self, demographic_dict):

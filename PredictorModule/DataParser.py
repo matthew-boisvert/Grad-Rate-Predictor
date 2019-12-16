@@ -1,7 +1,7 @@
 import csv
-import Demographic
-import Policy
 import re
+from . import Policy
+from . import Demographic
 
 def generateDemographicsList(input_file):
     demographics_list = []

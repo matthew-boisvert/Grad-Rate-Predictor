@@ -1,5 +1,5 @@
 import tkinter as tk
-import SwitchButton
+from . import SwitchButton
 
 class PolicyDisplay(object):
 

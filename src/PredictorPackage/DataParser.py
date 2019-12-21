@@ -1,5 +1,4 @@
 import csv
-import re
 from . import Policy
 from . import Demographic
 
@@ -16,7 +15,8 @@ def generateDemographicsList(input_file):
                 if(demographic_category == ""):
                     demographics_list.append(Demographic.Demographic(demographic_name, demographic_base_rate))
                 else:
-                    demographics_list.append(Demographic.Demographic(demographic_name, demographic_base_rate, demographic_category))
+                    demographics_list.append(
+                        Demographic.Demographic(demographic_name, demographic_base_rate, demographic_category))
             line_count += 1
     return demographics_list
 

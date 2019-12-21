@@ -1,7 +1,6 @@
 import tkinter as tk
 from . import Window
 
-
 class Canvas(object):
     current_demographic = None
 
@@ -78,7 +77,7 @@ class Canvas(object):
         next_demographic_found = False
         while(not next_demographic_found):
             if(current_index == 0):
-                current_index = len(Window.Window.demographic_list)-1
+                current_index = len(Window.Window.demographic_list) - 1
             else:
                 current_index = current_index-1
             if(current_category == "all" or Window.Window.demographic_list[current_index].category == current_category):

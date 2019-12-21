@@ -11,7 +11,6 @@ class Window(object):
 
         self.windowObj = tk.Tk()
         self.windowObj.title("First-Gen Graduation Rate Simulator")
-        self.windowObj.iconbitmap("project_logo.ico")
         self.frameObj = tk.Frame(self.windowObj)
         self.frameObj.configure(background="White", bd=0)
         self.frameObj.pack(fill="both", expand="yes")

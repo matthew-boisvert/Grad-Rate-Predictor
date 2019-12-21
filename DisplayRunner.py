@@ -1,11 +1,12 @@
-from PredictorModule import DataParser as DataParser
-from PredictorModule import Window as Window
-from PredictorModule import Canvas as Canvas
-from PredictorModule import MenuBar as MenuBar
-from PredictorModule import PolicyDisplay as PolicyDisplay
 
-policy_list = DataParser.generatePolicyList("PolicyData.csv")
-demographic_list = DataParser.generateDemographicsList("DemographicsData.csv")
+from src.PredictorPackage import DataParser
+from src.GraphicsPackage import Window
+from src.GraphicsPackage import Canvas
+from src.GraphicsPackage import MenuBar
+from src.GraphicsPackage import PolicyDisplay
+
+policy_list = DataParser.generatePolicyList("./src/data/PolicyData.csv")
+demographic_list = DataParser.generateDemographicsList("./src/data/DemographicsData.csv")
 
 window = Window.Window(demographic_list, policy_list)
 canvas = Canvas.Canvas(window.frameObj, demographic_list[0])
